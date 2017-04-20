@@ -16,7 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    CGFloat W =[UIScreen mainScreen].bounds.size.width;
+    CGFloat H =[UIScreen mainScreen].bounds.size.height;
+    
+    
+    UIView *backView =[[UIView alloc]initWithFrame:self.view.bounds];;
+    [self.view addSubview:backView];
+    backView.backgroundColor =[UIColor grayColor];
+    
+
+
+
 }
 
 - (void)didReceiveMemoryWarning {
